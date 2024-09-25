@@ -15,7 +15,7 @@ body {
 .container {
     width: 90%;
     max-width: 1200px;
-    margin: 10px;
+    margin: 5 auto;
 }
 
 header {
