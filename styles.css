@@ -286,7 +286,7 @@ nav ul li a:hover {
 
 @media (max-width: 768px) {
     .skills-list {
-        grid-template-columns: 6fr;
+        grid-template-columns: repeat(6, 3fr);
     }
 }
 
