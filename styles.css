@@ -280,19 +280,19 @@ nav ul li a:hover {
 
 .skills-list {
     display: grid;
-    grid-template-columns: repeat(6, 1fr); 
+    grid-template-columns: repeat(12, 1fr); 
     gap: 20px;
 }
 
 @media (max-width: 768px) {
     .skills-list {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(6, 1fr);
     }
 }
 
 @media (max-width: 480px) {
     .skills-list {
-        grid-template-columns: 2fr;
+        grid-template-columns: 4fr;
     }
 }
 
@@ -318,9 +318,9 @@ nav ul li a:hover {
 }
 
 .skill-icon {
-    width: 60px;
+    width: auto;
     height: 60px;
-    object-fit: fill;
+    object-fit: contain;
     margin-bottom: 15px;
     transition: transform 0.3s ease;
 }
