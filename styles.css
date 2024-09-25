@@ -20,12 +20,11 @@ body {
 }
 
 header {
-    background: #333;
+    background: ;
     padding: 20px 0;
 }
 
 header h1 {
-    color: #fff;
     float: left;
     margin-left: 20px;
 }
@@ -42,7 +41,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #fff;
+    color: #333;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
