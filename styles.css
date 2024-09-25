@@ -96,6 +96,7 @@ nav ul li a:hover {
 }
 
 
+
 .main h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
@@ -197,8 +198,20 @@ nav ul li a:hover {
 
 .skills-list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .skills-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-list {
+        grid-template-columns: 1fr;
+    }
 }
 
 .skill-item {
