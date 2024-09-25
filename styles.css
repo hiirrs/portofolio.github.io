@@ -117,17 +117,62 @@ nav ul li a:hover {
     line-height: 1.8;
 }
 
-.projects .project-list {
-    display: flex;
-    justify-content: space-between;
+.projects {
+    background-color: #f8f8f8;
+    padding: 80px 0;
 }
 
-.projects .project-item {
-    background: #f9f9f9;
-    padding: 20px;
-    width: 30%;
-    border: 1px solid #ddd;
+.section-title {
+    font-size: 3em;
     text-align: center;
+    margin-bottom: 60px;
+    font-family: 'Lora', serif;
+    color: #D8C3A5;
+    letter-spacing: 2px;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.project-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+}
+
+.project-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.project-title {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #333;
+}
+
+.project-description {
+    font-size: 1.1em;
+    color: #555;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.project-date {
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #999;
 }
 
 .contact .social-links {
