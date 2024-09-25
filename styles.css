@@ -51,7 +51,7 @@ header nav ul li a:hover {
     color: #f0a500;
 }
 
-.hero {
+.main {
     background: #f4f4f4;
     padding: 100px 0;
     text-align: center;
@@ -69,12 +69,12 @@ header nav ul li a:hover {
 }
 
 
-.hero h2 {
+.main h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
 }
 
-.hero img.profile-img {
+.main img.profile-img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
