@@ -251,6 +251,41 @@ nav ul li a:hover {
     }
 }
 
+.experiences-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns */
+    gap: 20px; /* Space between items */
+    padding: 20px;
+}
+
+.experience-item {
+    text-align: center;
+}
+
+.experience-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.experience-description {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .experiences-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .experiences-grid {
+        grid-template-columns: 1fr; /* Single column for mobile */
+    }
+}
+
 @media (max-width: 768px) {
     .experience-section {
         padding: 20px;
