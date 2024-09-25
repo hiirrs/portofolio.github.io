@@ -65,7 +65,7 @@ nav ul li a:hover {
     display: inline-block;
     margin-top: 20px;
     background-color: transparent;
-    color: #878585;
+    color: #a9a9a9;
     text-decoration: none;
     border-radius: 5px;
     font-size: 14px;
@@ -74,8 +74,8 @@ nav ul li a:hover {
 
 .back-to-top:hover {
     background-color: transparent;
-    color: #322323;
-    text-underline-offset: #322323;
+    color: #0f0c0c;
+    text-decoration-line: #322323;
 }
 
 .main {
