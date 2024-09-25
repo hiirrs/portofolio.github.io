@@ -1,48 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portofolio pribadi Anda">
-  <title>Portofolio - Nama Anda</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <header>
-    <h1>Nama Anda</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">Tentang Saya</a></li>
-        <li><a href="#projects">Proyek</a></li>
-        <li><a href="#contact">Kontak</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <div class="container">
+            <nav>
+                <h1>Your Name</h1>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <section id="about">
-    <h2>Tentang Saya</h2>
-    <img src="images/profile.jpg" alt="Foto Profil Nama Anda">
-    <p>Halo, saya [Nama Anda], seorang [Pekerjaan/Spesialisasi]. Saya memiliki pengalaman di bidang [spesifikasi keterampilan/karya].</p>
-  </section>
+    <section class="hero">
+        <div class="container">
+            <h2>Hello, I'm [Your Name]</h2>
+            <p>A web developer passionate about building beautiful and functional websites.</p>
+        </div>
+    </section>
 
-  <section id="projects">
-    <h2>Proyek</h2>
-    <div class="project-item">
-      <h3>Nama Proyek 1</h3>
-      <p>Deskripsi singkat tentang proyek ini.</p>
-    </div>
-    <div class="project-item">
-      <h3>Nama Proyek 2</h3>
-      <p>Deskripsi singkat tentang proyek ini.</p>
-    </div>
-  </section>
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Introduce yourself briefly. Mention your background, skills, and passions.</p>
+        </div>
+    </section>
 
-  <footer id="contact">
-    <h2>Kontak</h2>
-    <p>Email: <a href="mailto:emailanda@example.com">emailanda@example.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/username" target="_blank">Profil LinkedIn Anda</a></p>
-  </footer>
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-list">
+                <div class="project-item">
+                    <h3>Project 1</h3>
+                    <p>Description of your first project.</p>
+                </div>
+                <div class="project-item">
+                    <h3>Project 2</h3>
+                    <p>Description of your second project.</p>
+                </div>
+                <div class="project-item">
+                    <h3>Project 3</h3>
+                    <p>Description of your third project.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me via email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Name</p>
+        </div>
+    </footer>
 
 </body>
 </html>
