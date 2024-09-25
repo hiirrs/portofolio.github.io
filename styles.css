@@ -204,8 +204,9 @@ nav ul li a:hover {
 }
 
 .project-lang {
+    margin-top: 20px;
     width: auto; 
-    height: 15px;
+    height: 20px;
 }
 
 .project-date {
@@ -221,7 +222,7 @@ nav ul li a:hover {
 }
 
 .project-description {
-    font-size: 0.7em;
+    font-size: 0.6em;
     color: #555;
     margin-top: 10px;
     line-height: 1.6;
