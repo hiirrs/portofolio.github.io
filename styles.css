@@ -284,13 +284,22 @@ nav ul li a:hover {
     gap: 15px;
 }
 
+.skill-icon {
+    width: auto;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+
 @media (max-width: 768px) {
     .skills-list {
         grid-template-columns: repeat(6, 1fr);
     }
     .skill-icon {
         width: auto;
-        height: 5px;
+        height: 10px;
         object-fit: contain;
         margin-bottom: 5px;
         transition: transform 0.3s ease;
@@ -303,7 +312,7 @@ nav ul li a:hover {
     }
     .skill-icon {
         width: auto;
-        height: 5px;
+        height: 10px;
         object-fit: contain;
         margin-bottom: 5px;
         transition: transform 0.3s ease;
@@ -335,13 +344,6 @@ nav ul li a:hover {
     }
 }
 
-.skill-icon {
-    width: auto;
-    height: 60px;
-    object-fit: contain;
-    margin-bottom: 15px;
-    transition: transform 0.3s ease;
-}
 
 .skill-icon:hover {
     transform: translateY(-10px);
