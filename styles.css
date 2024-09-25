@@ -299,9 +299,9 @@ nav ul li a:hover {
     }
     .skill-icon {
         width: auto;
-        height: 10px;
+        height: 45px;
         object-fit: contain;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
         transition: transform 0.3s ease;
     }
 }
@@ -312,7 +312,7 @@ nav ul li a:hover {
     }
     .skill-icon {
         width: auto;
-        height: 10px;
+        height: 30px;
         object-fit: contain;
         margin-bottom: 5px;
         transition: transform 0.3s ease;
