@@ -1,6 +1,6 @@
  * {
-    margin: 5;
-    padding: 5;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Lora', serif;
 }
@@ -15,7 +15,7 @@ body {
 .container {
     width: 90%;
     max-width: 1200px;
-    margin-bottom: 20px;
+    margin: 10px;
 }
 
 header {
