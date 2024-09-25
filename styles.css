@@ -216,7 +216,7 @@ nav ul li a:hover {
 .project-img {
     height: 200px;
     border-radius: 5px;
-    object-fit: cover;
+    object-fit: fill;
 }
 
 .project-date-wrapper {
