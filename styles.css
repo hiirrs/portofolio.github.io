@@ -90,6 +90,13 @@ nav ul li a:hover {
     text-decoration-line: #322323;
 }
 
+.responsive-img {
+    width: 100%;
+    height: auto;
+    max-width: 100%; 
+    border-radius: 10px; 
+}
+
 .main {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(254, 254, 254, 0.5));
     padding: 100px 0;
@@ -241,6 +248,26 @@ nav ul li a:hover {
 @media (max-width: 480px) {
     .skills-list {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .experience-section {
+        padding: 20px;
+    }
+
+    .responsive-img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .experience-section {
+        padding: 10px;
+    }
+
+    .responsive-img {
+        width: 100%;
     }
 }
 
