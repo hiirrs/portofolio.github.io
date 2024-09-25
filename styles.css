@@ -204,7 +204,7 @@ nav ul li a:hover {
 }
 
 .project-lang {
-    margin-top: 20px;
+    margin-top: 10px;
     width: auto; 
     height: 20px;
 }
@@ -222,7 +222,7 @@ nav ul li a:hover {
 }
 
 .project-description {
-    font-size: 0.6em;
+    font-size: 0.5em;
     color: #555;
     margin-top: 10px;
     line-height: 1.6;
