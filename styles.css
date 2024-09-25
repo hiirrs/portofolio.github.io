@@ -286,11 +286,11 @@ nav ul li a:hover {
 
 @media (max-width: 768px) {
     .skills-list {
-        grid-template-columns: repeat(6, 3fr);
+        grid-template-columns: repeat(6, 1fr);
     }
     .skill-icon {
         width: auto;
-        height: 10px;
+        height: 5px;
         object-fit: contain;
         margin-bottom: 5px;
         transition: transform 0.3s ease;
@@ -303,7 +303,7 @@ nav ul li a:hover {
     }
     .skill-icon {
         width: auto;
-        height: 10px;
+        height: 5px;
         object-fit: contain;
         margin-bottom: 5px;
         transition: transform 0.3s ease;
