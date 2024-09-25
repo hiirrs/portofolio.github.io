@@ -197,15 +197,15 @@ nav ul li a:hover {
 .project-date-wrapper {
     display: flex;
     align-items: right;
-    justify-content: center;
+    justify-content: right;
     gap: 10px; 
     margin-top: 10px;
 
 }
 
 .project-lang {
-    width: 20px; /* Set a small size for the icon */
-    height: auto;
+    width: auto; 
+    height: 20px;
 }
 
 .project-date {
