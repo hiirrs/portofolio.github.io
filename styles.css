@@ -280,19 +280,19 @@ nav ul li a:hover {
 
 .skills-list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
+    grid-template-columns: repeat(6, 1fr); 
     gap: 20px;
 }
 
 @media (max-width: 768px) {
     .skills-list {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
 @media (max-width: 480px) {
     .skills-list {
-        grid-template-columns: 1fr;
+        grid-template-columns: 2fr;
     }
 }
 
@@ -317,23 +317,16 @@ nav ul li a:hover {
     }
 }
 
-.skill-item {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.skill-item:hover {
-    transform: translateY(-10px);
-}
-
 .skill-icon {
     width: 60px;
     height: 60px;
-    object-fit: contain;
+    object-fit: fill;
     margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.skill-icon:hover {
+    transform: translateY(-10px);
 }
 
 .skill-item p {
