@@ -194,10 +194,22 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
+.project-date-wrapper {
+    display: flex;
+    align-items: center; /* Vertically aligns the icon and text */
+    justify-content: center; /* Centers them horizontally */
+    gap: 10px; /* Adds some space between the icon and the date */
+    margin-top: 10px;
+}
+
 .project-lang {
-    max-width: 40px;
+    width: 20px; /* Set a small size for the icon */
     height: auto;
-    border-radius: 5px;
+}
+
+.project-date {
+    font-size: 0.9em;
+    color: #999;
 }
 
 .project-title {
@@ -211,12 +223,6 @@ nav ul li a:hover {
     color: #555;
     margin-top: 10px;
     line-height: 1.6;
-}
-
-.project-date {
-    margin-top: 15px;
-    font-size: 0.9em;
-    color: #999;
 }
 
 .skills {
