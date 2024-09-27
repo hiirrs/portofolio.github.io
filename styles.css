@@ -70,7 +70,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #f0a500;
+    color: #daceb4;
 }
 
 .back-to-top {
@@ -165,7 +165,7 @@ nav ul li a:hover {
     text-align: center;
     margin-bottom: 20px;
     font-family: 'Lora', serif;
-    color: #D8C3A5;
+    color: #333;
     letter-spacing: 2px;
 }
 
