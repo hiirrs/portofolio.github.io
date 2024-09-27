@@ -328,10 +328,6 @@ nav ul li a:hover {
     .experience-section {
         padding: 20px;
     }
-
-    /* .responsive-img {
-        width: 100%;
-    } */
 }
 
 @media (max-width: 480px) {
@@ -344,24 +340,36 @@ nav ul li a:hover {
     }
 }
 
-.experience-slider {
-    display: flex;
-    overflow-x: auto;
+.experience-section {
+    padding: 60px 0;
+  }
+  
+  .experience-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    scroll-snap-type: x mandatory;
-}
-
-.experience-item {
-    min-width: 300px;
-    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .experience-smaller {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .experience-item {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    scroll-snap-align: start;
-    flex: 0 0 auto;
-    text-align: left;
+    position: relative;
     transition: transform 0.3s ease;
+    text-align: left;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .experience-item:hover {
+    transform: translateY(-10px);
   }
   
   .experience-item img {
@@ -369,11 +377,7 @@ nav ul li a:hover {
     height: auto;
     object-fit: cover;
     border-radius: 8px;
-    margin-bottom: 15px;
-  }
-  
-  .experience-item:hover {
-    transform: translateY(-10px);
+    transition: opacity 0.3s ease-in-out;
   }
   
   .experience-title {
@@ -382,24 +386,43 @@ nav ul li a:hover {
     margin-bottom: 10px;
   }
   
-  .experience-description,
-  .experience-date {
-    font-size: 1em;
-    color: #555;
+  .experience-item:hover .experience-img {
+    opacity: 0;
+  }
+  
+  .experience-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .experience-item:hover::before {
+    opacity: 1;
+  }
+  
+  .experience-smaller .experience-item {
+    width: 50%;
   }
   
   @media (max-width: 768px) {
-    .experience-slider {
-      display: block;
+    .experience-grid {
+      grid-template-columns: 1fr;
     }
   
-    .experience-item {
+    .experience-smaller .experience-item {
       width: 100%;
-      margin-bottom: 20px;
     }
   }
-
   
+
 .skill-icon:hover {
     transform: translateY(-10px);
 }
