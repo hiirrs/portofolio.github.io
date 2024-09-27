@@ -349,9 +349,57 @@ nav ul li a:hover {
     overflow-x: auto;
     gap: 20px;
     scroll-snap-type: x mandatory;
+}
+
+.experience-item {
+    min-width: 300px;
+    max-width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+    text-align: left;
+    transition: transform 0.3s ease;
+  }
+  
+  .experience-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .experience-item:hover {
+    transform: translateY(-10px);
+  }
+  
+  .experience-title {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .experience-description,
+  .experience-date {
+    font-size: 1em;
+    color: #555;
+  }
+  
+  @media (max-width: 768px) {
+    .experience-slider {
+      display: block;
+    }
+  
+    .experience-item {
+      width: 100%;
+      margin-bottom: 20px;
+    }
   }
 
-
+  
 .skill-icon:hover {
     transform: translateY(-10px);
 }
