@@ -361,11 +361,9 @@ nav ul li a:hover {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    position: relative;
     transition: transform 0.3s ease;
     text-align: left;
     overflow: hidden;
-    cursor: pointer;
   }
   
   .experience-item:hover {
@@ -379,11 +377,25 @@ nav ul li a:hover {
     border-radius: 8px;
     transition: opacity 0.3s ease-in-out;
   }
+
+  .experience-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
   
   .experience-title {
     font-size: 1.5em;
     color: #333;
     margin-bottom: 10px;
+  }
+  
+  .experience-description {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
   }
   
   .experience-item:hover .experience-img {
