@@ -70,7 +70,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #daceb4;
+    color: #c2bbaa;
 }
 
 .back-to-top {
@@ -171,7 +171,7 @@ nav ul li a:hover {
 
 .project-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
 }
 
@@ -329,9 +329,9 @@ nav ul li a:hover {
         padding: 20px;
     }
 
-    .responsive-img {
+    /* .responsive-img {
         width: 100%;
-    }
+    } */
 }
 
 @media (max-width: 480px) {
@@ -343,6 +343,13 @@ nav ul li a:hover {
         width: 100%;
     }
 }
+
+.experience-slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    scroll-snap-type: x mandatory;
+  }
 
 
 .skill-icon:hover {
