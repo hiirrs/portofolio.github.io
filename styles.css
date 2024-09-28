@@ -39,12 +39,6 @@ section {
     position: relative;
 }
 
-section:target,
-section:hover {
-    opacity: 1;
-    transform: translateY(0);
-    animation: fadeInUp 1s ease-out;
-}
 
 @media (max-width: 768px) {
     section {
