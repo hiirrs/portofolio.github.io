@@ -170,6 +170,11 @@ nav ul li a:hover {
 }
 
 @media (max-width: 768px) {
+    .main h2 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
     .section-title {
         font-size: 1.5em;
         text-align: center;
@@ -182,6 +187,11 @@ nav ul li a:hover {
 }
 
 @media (max-width: 480px) {
+    .main h2 {
+        font-size: 0.5em;
+        margin-bottom: 20px;
+    }
+
     .section-title {
         font-size: 0.5em;
         text-align: center;
