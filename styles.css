@@ -133,7 +133,7 @@ nav ul li a:hover {
     width: 150px;
     height: 150px;
     margin-bottom: 20px;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
 }
