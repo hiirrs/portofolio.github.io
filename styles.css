@@ -551,6 +551,11 @@ nav ul li a:hover {
     color: #333;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact .social-links a:hover {
+    color: #c2bbaa;
 }
 
 footer {
