@@ -357,15 +357,12 @@ nav ul li a:hover {
   }
   
   .experience-item {
-    display: flex;
-    flex-direction: column;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    text-align: left;
     transition: transform 0.3s ease;
-    position: relative; 
+    text-align: left;
     overflow: hidden;
   }
   
@@ -375,7 +372,7 @@ nav ul li a:hover {
   
   .experience-item img {
     width: 100%;
-    height: 200px;
+    height: auto;
     object-fit: cover;
     border-radius: 8px;
     transition: opacity 0.3s ease-in-out;
@@ -389,11 +386,9 @@ nav ul li a:hover {
   }
   
   .experience-title {
-    font-size: smaller;
-    color: #555;
-    margin-top: 10px;
-    line-height: 1.6;
-    text-align: left;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
   }
   
   .experience-description {
@@ -430,28 +425,13 @@ nav ul li a:hover {
   
   @media (max-width: 768px) {
     .experience-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
+      grid-template-columns: 1fr;
     }
-
-    .experience-item {
-        padding: 15px;
+  
+    .experience-smaller .experience-item {
+      width: 100%;
     }
-}
-
-@media (max-width: 480px) {
-    .experience-item {
-        padding: 10px;
-    }
-
-    .experience-title {
-        font-size: 1em;
-    }
-
-    .experience-description {
-        font-size: x-small;
-    }
-}
+  }
   
 
 .skill-icon:hover {
