@@ -158,16 +158,29 @@ nav ul li a:hover {
 }
 
 @keyframes fade {
-    0% {
+    0%, 50% {
         opacity: 1;
     }
-    45% {
-        opacity: 1;
-    }
-    50% {
+    55%, 100% {
         opacity: 0;
     }
-    95% {
+}
+
+.img-2 {
+    animation: fade2 5s infinite;
+}
+
+@keyframes fade2 {
+    0%, 50% {
+        opacity: 0;
+    }
+    55%, 100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
         opacity: 0;
     }
     100% {
