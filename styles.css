@@ -126,13 +126,15 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-.image-container {
-    position: relative; /* Allows images to overlap */
-    width: 150px; /* Width of the profile image */
-    height: 150px; /* Height of the profile image */
-    margin: 20px auto; /* Centers the container horizontally and adds space below */
-    display: flex; /* Flexbox for alignment */
-    justify-content: center; /* Horizontally centers the image inside the container */
+image-container {
+    margin-left: 50%;
+    margin-right: 50%;
+    position: relative; 
+    width: 150px; 
+    height: 150px; 
+    margin: 20px auto; 
+    display: flex;
+    justify-content: center; 
     align-items: center;
 }
 
