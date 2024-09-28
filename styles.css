@@ -120,6 +120,8 @@ nav ul li a:hover {
 }
 
 .main img.profile-img {
+    margin-left: 50%;
+    margin-right: 50%;
     width: 150px;
     height: 150px;
     border-radius: 50%;
