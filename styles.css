@@ -127,10 +127,11 @@ nav ul li a:hover {
 }
 
 .image-container {
-    position: relative;
+    position: absolute;
+    justify-items: center;
     width: 200px;
     height: 200px;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .profile-img {
@@ -149,7 +150,7 @@ nav ul li a:hover {
 }
 
 .img-2 {
-    animation-delay: 3s; 
+    animation-delay: 0s; 
 }
 
 @keyframes fade {
