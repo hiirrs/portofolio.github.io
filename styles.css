@@ -125,12 +125,11 @@ nav ul li a:hover {
     height: 150px;
     border-radius: 50%;
     margin: 0 auto; 
-    margin-bottom: 10px; 
 }
 
 
 .image-container {
-    margin: 0 auto;
+    margin-left: 45%;
     width: 150px;
     height: 150px;
     margin-bottom: 20px;
