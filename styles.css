@@ -133,10 +133,10 @@ nav ul li a:hover {
     width: 150px;
     height: 150px;
     margin-bottom: 20px;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
 }
 
 .profile-img {
@@ -146,6 +146,9 @@ nav ul li a:hover {
     object-fit: cover;
     transition: opacity 0.5s ease-in-out;
     animation: fade 5s infinite; 
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 
