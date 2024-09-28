@@ -26,6 +26,9 @@ header {
 }
 
 header h1 {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
     float: left;
     margin-left: 20px;
 }
@@ -36,11 +39,57 @@ section {
     position: relative;
 }
 
+section:target,
+section:hover {
+    opacity: 1;
+    transform: translateY(0);
+    animation: fadeInUp 1s ease-out;
+}
+
 @media (max-width: 768px) {
     section {
         padding: 40px 20px;
     }
 }
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about, .projects, .contact {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+@media (min-height: 500px) {
+    .about {
+        opacity: 1;
+        animation: fadeIn 1s forwards;
+    }
+}
+
+@media (min-height: 800px) {
+    .projects {
+        opacity: 1;
+        animation: fadeIn 1s forwards;
+    }
+}
+
+@media (min-height: 1200px) {
+    .contact {
+        opacity: 1;
+        animation: fadeIn 1s forwards;
+    }
+}
+
 
 nav {
     display: flex;
@@ -103,7 +152,7 @@ nav ul li a:hover {
     padding: 40px 0; 
     text-align: center;
     opacity: 0;
-    animation: fadeIn 2s ease-in forwards;
+    animation: fadeIn 0.5s ease-in forwards;
 }
 
 @keyframes fadeIn {
@@ -112,6 +161,17 @@ nav ul li a:hover {
     }
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -180,15 +240,6 @@ nav ul li a:hover {
         opacity: 0;
     }
     55%, 100% {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
         opacity: 1;
     }
 }
