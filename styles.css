@@ -37,13 +37,9 @@ section {
     padding: 60px 0;
     color: #333;
     position: relative;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(249, 249, 249, 0.5));
 }
 
-@media (max-width: 768px) {
-    section {
-        padding: 40px 20px;
-    }
-}
 
 nav {
     display: flex;
@@ -197,16 +193,7 @@ nav ul li a:hover {
         opacity: 1;
     }
 }
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
+/* 
 #about {
     background: linear-gradient(to bottom, rgba(254, 254, 254, 0.5), rgba(249, 249, 249, 0.5));
 }
@@ -225,7 +212,7 @@ nav ul li a:hover {
 
 #contact {
     background: linear-gradient(to bottom, rgba(234, 234, 234, 0.5), rgba(229, 229, 229, 0.5));
-}
+} */
 
 .about, .projects, .contact {
     padding: 60px 0;
@@ -250,30 +237,6 @@ nav ul li a:hover {
     letter-spacing: 2px;
 }
 
-@media (max-width: 768px) {
-    .section-title {
-        font-size: 2em;
-        text-align: center;
-        margin-bottom: 40px;
-        font-family: 'Lora', serif;
-        color: #333;
-        letter-spacing: 2px;
-    }
-    
-}
-
-@media (max-width: 480px) {
-    .section-title {
-        font-size: 1.5em;
-        text-align: center;
-        margin-bottom: 20px;
-        font-family: 'Lora', serif;
-        color: #333;
-        letter-spacing: 2px;
-    }
-    
-}
-
 .project-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -294,31 +257,6 @@ nav ul li a:hover {
 
 .project-item:hover {
     transform: translateY(-10px);
-}
-
-@media (max-width: 768px) {
-    .project-list {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    
-    .project-item {
-        padding: 15px; 
-    }
-}
-
-@media (max-width: 480px) {
-    .project-item {
-        padding: 10px; 
-    }
-    
-    .project-title {
-        font-size: 1em; 
-    }
-
-    .project-description {
-        font-size: x-small;
-    }
 }
 
 .project-img {
@@ -397,8 +335,29 @@ nav ul li a:hover {
     transition: transform 0.3s ease;
 }
 
-
 @media (max-width: 768px) {
+    section {
+        padding: 40px 20px;
+    }
+
+    .section-title {
+        font-size: 2em;
+        text-align: center;
+        margin-bottom: 40px;
+        font-family: 'Lora', serif;
+        color: #333;
+        letter-spacing: 2px;
+    }
+
+    .project-list {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .project-item {
+        padding: 15px; 
+    }
+
     .skills-list {
         grid-template-columns: repeat(6, 1fr);
     }
@@ -409,9 +368,46 @@ nav ul li a:hover {
         margin-bottom: 10px;
         transition: transform 0.3s ease;
     }
-}
+
+    .experience-section {
+        padding: 20px;
+    }
+
+    .experience-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .experience-smaller .experience-item {
+      width: 100%;
+    }
+  }
 
 @media (max-width: 480px) {
+    .section-title {
+        font-size: 1.5em;
+        text-align: center;
+        margin-bottom: 20px;
+        font-family: 'Lora', serif;
+        color: #333;
+        letter-spacing: 2px;
+    }
+
+    .project-list {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .project-item {
+        padding: 10px; 
+    }
+    
+    .project-title {
+        font-size: 1em; 
+    }
+
+    .project-description {
+        font-size: x-small;
+    }
+
     .skills-list {
         grid-template-columns: repeat(6, 1fr);
     }
@@ -424,25 +420,13 @@ nav ul li a:hover {
     }
     
     .skill-icon:hover {
-        transform: translateY(-10px);
+        transform: translateY(-5px);
     }
-}
 
-
-@media (max-width: 768px) {
-    .experience-section {
-        padding: 20px;
-    }
-}
-
-@media (max-width: 480px) {
     .experience-section {
         padding: 10px;
     }
 
-    .responsive-img {
-        width: 100%;
-    }
 }
 
 .experience-section {
@@ -502,43 +486,7 @@ nav ul li a:hover {
     color: #555;
     line-height: 1.6;
   }
-  
-  .experience-item:hover .experience-img {
-    opacity: 0;
-  }
-  
-  .experience-item::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('');
-    background-size: cover;
-    background-position: center;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-  }
-  
-  .experience-item:hover::before {
-    opacity: 1;
-  }
-  
-  .experience-smaller .experience-item {
-    width: 50%;
-  }
-  
-  @media (max-width: 768px) {
-    .experience-grid {
-      grid-template-columns: 1fr;
-    }
-  
-    .experience-smaller .experience-item {
-      width: 100%;
-    }
-  }
-  
+
 
 .skill-icon:hover {
     transform: translateY(-10px);
