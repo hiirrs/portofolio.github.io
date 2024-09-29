@@ -1,4 +1,4 @@
- * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -92,6 +92,13 @@ nav ul li a:hover {
     background-color: transparent;
     color: #0f0c0c;
     text-decoration-line: #322323;
+}
+
+.responsive-img {
+    width: 100%;
+    height: auto;
+    max-width: 100%; 
+    border-radius: 10px; 
 }
 
 .main {
@@ -496,6 +503,31 @@ nav ul li a:hover {
     line-height: 1.6;
   }
   
+  .experience-item:hover .experience-img {
+    opacity: 0;
+  }
+  
+  .experience-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .experience-item:hover::before {
+    opacity: 1;
+  }
+  
+  .experience-smaller .experience-item {
+    width: 50%;
+  }
   
   @media (max-width: 768px) {
     .experience-grid {
