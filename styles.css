@@ -9,7 +9,7 @@ body {
     font-family: 'Lora', serif;
     line-height: 1.6;
     color: #333;
-    background: linear-gradient(to bottom, #f0f0f0, #e0e0e0, #cccccc, #aaaaaa, #ffffff);
+    background: linear-gradient(to bottom,#ffffff #f0f0f0, #e0e0e0, #cccccc, #aaaaaa);
 }
 
 .container {
