@@ -433,10 +433,6 @@ nav ul li a:hover {
         padding: 10px;
     }
 
-    .experience-grid {
-        grid-template-columns: 1fr;
-      }
-
 }
 
 .experience-section {
