@@ -21,7 +21,7 @@ body {
 }
 
 header {
-    background: #f0f0f0;
+    background: #fff;
     padding: 20px 0;
 }
 
@@ -81,7 +81,7 @@ nav ul li a:hover {
     display: inline-block;
     margin-top: 20px;
     background-color: transparent;
-    color: #a9a9a9;
+    color: #716969;
     text-decoration: none;
     border-radius: 5px;
     font-size: 14px;
@@ -570,7 +570,7 @@ nav ul li a:hover {
 }
 
 .social-icon:hover {
-    color: #3e3e3a;
+    color: #505041;
 }
 
 
