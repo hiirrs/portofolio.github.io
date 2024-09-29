@@ -12,6 +12,12 @@ body {
     background: linear-gradient(to bottom,#ffffff #f0f0f0, #e0e0e0, #cccccc, #aaaaaa);
 }
 
+@font-face {
+    font-family: 'Lora';
+    src: url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+    font-display: swap;
+}
+
 .container {
     width: 90%;
     max-width: 1200px;
